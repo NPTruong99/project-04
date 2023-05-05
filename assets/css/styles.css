@@ -588,11 +588,14 @@ button {
     background: #fff6ed;
 }
 
-.services__top {
+.services__top,
+.staff-label,
+.staff__heading {
     text-align: center;
 }
 
-.services__label {
+.services__label,
+.staff-label {
     margin-bottom: 15px;
     font-family: Sora, sans-serif;
     font-weight: 600;
@@ -703,6 +706,76 @@ button {
     font-size: 1.6rem;
     line-height: 1;
     text-align: center;
+    color: #ff5b2e;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+}
+
+/* Staff */
+.staff {
+    padding: 130px 0;
+}
+
+.staff__list {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+.staff-item__img-wrap {
+    position: relative;
+    margin: 0 16px;
+    border-radius: 130px;
+}
+
+.staff-item__img-wrap::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 266px;
+    border-radius: inherit;
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff-item__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.staff-item__info {
+    margin-top: 34px;
+    text-align: center;
+}
+
+.staff-info__job {
+    font-size: 1.4rem;
+    line-height: 1;
+    text-align: center;
+    color: #656689;
+}
+
+.staff-info__name {
+    margin-top: 14px;
+    font-family: Sora, sans-serif;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 1;
+    color: #000958;
+}
+
+.staff__cta-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.staff__btn {
+    min-width: 193px;
     color: #ff5b2e;
     border: 1px solid rgba(255, 91, 46, 0.6);
 }
